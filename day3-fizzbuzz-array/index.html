@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      margin: 0;
+      align-items: center;
+      line-height: 1.5;
+      justify-content: center;
+      background-color: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      padding: .75rem;
+      border-radius: .25rem;
+      outline: none;
+      border: 1px solid rgb(219 223 234);
+      width: 300px;
+    }
+
+    button {
+      border: none;
+      /* font-size: 1.15rem; */
+      margin-top: 1rem;
+      padding: .75rem 3rem;
+      background-color: #fecb3f;
+      color: white;
+      padding: 0.85rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+    .display {
+      margin: 2rem auto;
+      max-width: 400px;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form onsubmit="event.preventDefault()">
+    <h2>FizzBuzz</h2>
+    <!-- <input type="number" placeholder="Enter a number"> -->
+    <button type="submit">Submit</button>
+    <div class="display"></div>
+  </form>
+</body>
+<script src="./app.js"></script>
+
+</html>
