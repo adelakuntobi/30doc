@@ -1,0 +1,102 @@
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(218, 23%, 16%);
+}
+
+body.light {
+  background-color: gray;
+}
+
+.toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* margin: 1rem; */
+  font-size: 1.15rem;
+  cursor: pointer;
+  color: white;
+}
+.light .toggle {
+  color:gray !important;
+  font-weight: 700;
+}
+
+main {
+  height: calc(100vh - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+main div.container {
+  max-width: 450px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+.light main div.container {
+background-color: #fefefe;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.light h2{
+  color: hsl(150deg 100% 39%)
+}
+
+p {
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+  font-size: 28px;
+  margin: 1.5rem 0;
+  transition: all;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+  /* tr */
+}
+.light p{
+  color: black;
+}
+div img.divider {
+  margin-bottom: 2rem;
+}
+
+div .dice {
+  position: absolute;
+  background-color: hsl(150, 100%, 66%);
+  padding: 1rem;
+  /* width: 45px; */
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+div .dice img {
+  width: 2rem;
+}
+div .dice:hover {
+  box-shadow: 0 0 20px 3px hsl(150deg 100% 66%);
+}
+
+
+.light div .dice{
+  background-color: hsl(150deg 100% 39%);
+}
+.light div .dice:hover{
+  box-shadow: 0 0 20px 3px hsl(150deg 100% 39%);
+}
